@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&family=Manrope:wght@800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Roxborough";
+  src: url("/fonts/Roxborough.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roxborough-Medium";
+  src: url("/fonts/Roxborough-medium.ttf") format("truetype");
+}
+
+.iconButton {
+  color: #000;
+}
+
+.group:hover .iconButton {
+  color: #fff;
+}
+
+.backCard {
+  bottom: 0;
+  transition: 0.5s ease;
+  width: 100%;
+  height: 0;
+}
+
+.card:hover .backCard {
+  height: 100%;
+}
+.card:hover .quote {
+  z-index: 0;
+}
+.backCardPhone {
+  /* height: 0; */
+  bottom: 0;
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+}
+/* 
+.backCardPhone .open {
+  height: 100%;
+}
+
+.backCardPhone .closed {
+  height: 0;
+} */
